@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#05010f">
+<meta name="description" content="j-bunrod — โปรไฟล์ส่วนตัว ผลงาน ช่องทางติดต่อ และเว็บไซต์ส่วนตัว">
+<title>j-bunrod · Personal Universe</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%237c5cff'>J</text></svg>">
+</head>
+<body>
+
+<!-- ===== พื้นหลังเรืองแสง ===== -->
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-spotlight" id="spotlight" aria-hidden="true"></div>
+
+<!-- ===== เมนู ===== -->
+<header class="topbar">
+  <a class="brand" href="#top">
+    <span class="brand-mark">J</span>
+    <span class="brand-text">j-bunrod</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="navMenu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav" id="navMenu">
+    <a href="#about">เกี่ยวกับ</a>
+    <a href="#contact">ติดต่อ</a>
+    <a class="nav-cta" href="https://www.facebook.com/j.bunrod" target="_blank" rel="noopener">Facebook</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <p class="hero-kicker"><span class="pulse"></span> PERSONAL UNIVERSE · ยินดีต้อนรับ</p>
+
+  <h1 class="hero-title">
+    <span class="line"><span class="glitch" data-text="j-bunrod">j-bunrod</span></span>
+  </h1>
+
+  <p class="hero-tagline" id="tagline"></p>
+
+  <p class="hero-desc">
+    นี่คือจุดเริ่มต้นของผม — พื้นที่เก็บงาน ความคิด และทุกอย่างที่ผมสร้างขึ้น
+    อยากรู้จักกันให้มากขึ้น? ติดต่อผ่าน Facebook ได้ทันที
+  </p>
+
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="#contact">
+      <span class="btn-glow"></span>
+      ติดต่อผ่าน Facebook
+    </a>
+    <a class="btn btn-ghost" href="#about">เกี่ยวกับผม</a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num" data-count="1">0</span>
+      <span class="stat-label">โปรเจค</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="2">0</span>
+      <span class="stat-label">บัญชี GitHub</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="100">0</span>
+      <span class="stat-label">% หมายถึง</span>
+    </div>
+  </div>
+
+  <a class="scroll-hint" href="#about" aria-label="เลื่อนลง">
+    <span class="scroll-line"></span>
+  </a>
+</section>
+
+<!-- ===== เกี่ยวกับ ===== -->
+<section class="section" id="about">
+  <div class="section-head reveal">
+    <span class="section-index">01</span>
+    <h2 class="section-title">เกี่ยวกับ<span class="accent">ผม</span></h2>
+  </div>
+
+  <div class="about-grid">
+    <article class="card glass reveal">
+      <div class="card-icon">◆</div>
+      <h3>แนะนำตัว</h3>
+      <p>
+        ผมชื่อ <strong>j-bunrod</strong> คนที่ชอบสร้างสิ่งเล็กๆ บนมือถือ
+        ชอบโค้ดที่เบา ใช้งานง่าย และดูดีบนหน้าจอเล็กๆ
+      </p>
+    </article>
+
+    <article class="card glass reveal">
+      <div class="card-icon">◆</div>
+      <h3>กำลังทำอะไร</h3>
+      <p>
+        กำลังเรียนรู้และทดลองทำเว็บแบบ mobile-first เก็บงานไว้บน GitHub
+        และเรียนรู้การใช้ AI ช่วยเขียนโค้ดในชีวิตจริง
+      </p>
+    </article>
+
+    <article class="card glass reveal">
+      <div class="card-icon">◆</div>
+      <h3>สิ่งที่ชอบ</h3>
+      <p>
+        โค้ดสะอาดอ่านรู้เรื่อง · ดีไซน์ที่ไม่ต้องพูดว่า "ดูเป็นเทมเพลต"
+        · เครื่องมือเล็กๆ ที่ทำงานได้จริงบนมือถือ
+      </p>
+    </article>
+  </div>
+
+  <div class="stack-row reveal">
+    <span class="stack-label">STACK</span>
+    <div class="stack-tags">
+      <span class="tag">HTML5</span>
+      <span class="tag">CSS3</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Python3</span>
+      <span class="tag">Git</span>
+      <span class="tag">GitHub Actions</span>
+      <span class="tag">OpenCode</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ติดต่อ ===== -->
+<section class="section" id="contact">
+  <div class="section-head reveal">
+    <span class="section-index">02</span>
+    <h2 class="section-title">ช่องทาง<span class="accent">ติดต่อ</span></h2>
+  </div>
+
+  <p class="section-lead reveal">
+    อยากคุยกัน อยากร่วมงาน หรืออยากรู้อะไรเพิ่มเติม — ทักมาทาง Facebook ได้เลย
+  </p>
+
+  <div class="contact-grid">
+    <!-- Facebook -->
+    <a class="contact-card fb reveal"
+       href="https://www.facebook.com/j.bunrod" target="_blank" rel="noopener">
+      <div class="contact-glow"></div>
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true">
+          <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.5-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.93 8.44-9.94Z"/>
+        </svg>
+      </div>
+      <h3>Facebook</h3>
+      <p class="contact-handle">facebook.com/j.bunrod</p>
+      <span class="contact-action">ทักหาผ่าน Messenger →</span>
+    </a>
+
+    <!-- Website -->
+    <a class="contact-card web reveal"
+       href="https://j-bunrod.github.io" target="_blank" rel="noopener">
+      <div class="contact-glow"></div>
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/>
+        </svg>
+      </div>
+      <h3>Website</h3>
+      <p class="contact-handle">j-bunrod.github.io</p>
+      <span class="contact-action">เปิดเว็บไซต์ →</span>
+    </a>
+
+    <!-- Copy -->
+    <div class="contact-card copy reveal">
+      <div class="contact-glow"></div>
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <rect x="9" y="9" width="12" height="12" rx="2.5"/>
+          <path d="M5 15V6a2 2 0 0 1 2-2h8"/>
+        </svg>
+      </div>
+      <h3>คัดลอกลิงก์</h3>
+      <p class="contact-handle" id="copyText">facebook.com/j.bunrod</p>
+      <button class="copy-btn" id="copyBtn" type="button">คัดลอก</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ฟุตเตอร์ ===== -->
+<footer class="footer">
+  <div class="footer-orb" aria-hidden="true"></div>
+  <p class="footer-title">สร้างด้วย <span class="accent">♥</span> และเสียงเพลงซินต์เวฟ</p>
+  <p class="footer-copy">
+    © <span id="year">2026</span> j-bunrod · สร้างด้วย HTML5 · CSS3 · JavaScript
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
